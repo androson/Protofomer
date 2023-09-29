@@ -24,16 +24,12 @@ public class JumpOne : MonoBehaviour
     }
 
     // Update is called once per frame
+    
     void Update()
     {
         Movement();
         Jump();
-       //Debug.Log("gravityScale" + gravityScale);
-       //Debug.Log("gravityMultiplier" + gravityMultiplier);
-       //Debug.Log("playerRB.velocity.y" + playerRB.velocity.y);
-
     }
-
 
     private void Movement()
     {
