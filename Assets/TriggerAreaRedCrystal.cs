@@ -5,6 +5,7 @@ using UnityEngine;
 public class TriggerAreaRedCrystal : MonoBehaviour
 {
 
+    // when player touches crystal, sends message to game events script to start the broadcast to subscribers
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")

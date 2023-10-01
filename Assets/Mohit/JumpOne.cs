@@ -28,18 +28,19 @@ public class JumpOne : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //gravityScale = playerRB.gravityScale;
+        // subscribes to events from event script so they recieve the message
         GameEvents.current.onPickUpRedCrystal += PickUpRedCrystal;
         GameEvents.current.onPickUpBlueCrystal += PickUpBlueCrystal;
     }
 
+    // set crystalRed true when event broadcast recieved
     private void PickUpRedCrystal()
     {
         crystalRed = true;
 
         Debug.Log("CrystalRed" + crystalRed);
     }
-
+    // set crystalBlue true when event broadcast recieved
     private void PickUpBlueCrystal()
     {
         crystalBlue = true;
@@ -132,6 +133,7 @@ public class JumpOne : MonoBehaviour
 
     #region Ground Check
     
+    // simple collision check for if player grounded
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Floor")
