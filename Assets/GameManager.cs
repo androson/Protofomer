@@ -31,10 +31,20 @@ public class GameManager : MonoBehaviour
     public void LoadLevel1()
     {
         Time.timeScale = 1.0f;
+        SceneManager.LoadScene("Abbas");
+    }
+    /*
+    public void LoadLevel2()
+    {
+        Time.timeScale = 1.0f;
         SceneManager.LoadScene("Mohit");
     }
+    public void LoadLevel3()
+    {
+        Time.timeScale = 1.0f;
+        SceneManager.LoadScene("Abbas2");
+    }*/
 
-   
     public void QuitGame()
     {
         Debug.Log("Game quit");

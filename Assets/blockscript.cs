@@ -9,7 +9,7 @@ public class blockscript : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "Scarab" || other.gameObject.tag == "player" && other.contacts[0].normal.y > 0f)
+        if (other.gameObject.tag == "Scarab" || other.gameObject.tag == "Player" && other.contacts[0].normal.y > 0f)
         {
             Hit.Invoke();
         }

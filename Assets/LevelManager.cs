@@ -7,6 +7,10 @@ public class LevelManager : MonoBehaviour
 {
     [SerializeField] private GameObject pauseScreen;
     private bool isPaused = false ;
+
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip pauseSound;
+
     //private bool pauseEnable;
 
     // Start is called before the first frame update
@@ -33,10 +37,12 @@ public class LevelManager : MonoBehaviour
             Time.timeScale = 0;
             pauseScreen.SetActive(true);
             isPaused = true;
+            audioSource.PlayOneShot(pauseSound);
         }
         // if already paused then does the opposite
         else if (Input.GetKeyDown(KeyCode.Escape) && isPaused == true)
         {
+
             Time.timeScale = 1;
             pauseScreen.SetActive(false);
             isPaused = false;

@@ -18,11 +18,16 @@ public class JumpOne : MonoBehaviour
     float timeMovement = 0f;
 
     //bool crystalRed;
-   //bool crystalBlue;
+    //bool crystalBlue;
 
     bool keyRed;
     bool doorRed;
     public GameObject redDoor;
+
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip jumpSound;
+    [SerializeField] AudioClip keyPick;
+    [SerializeField] AudioClip doorSound;
 
     //bool groundBreakable;
     //bool groundSlamming;
@@ -35,61 +40,69 @@ public class JumpOne : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // subscribes to events from event script so they recieve the message
-        GameEvents.current.onPickUpRedCrystal += PickUpRedCrystal;
-        GameEvents.current.onPickUpBlueCrystal += PickUpBlueCrystal;
+
+
+
+        //GameEvents.current.onPickUpRedCrystal += PickUpRedCrystal;
+        //GameEvents.current.onPickUpBlueCrystal += PickUpBlueCrystal;
+
+        //subscribes to events from event script so they recieve the message
         GameEvents.current.onPickUpRedKey += PickUpRedKey;
         GameEvents.current.onRedDoor += RedDoor;
+       
         //GameEvents.current.ongroundPound += groundPound;
     }
     #region Event Subscribtions 
 
     // set crystalRed true when event broadcast recieved
-    private void PickUpRedCrystal()
-    {
-        crystalRed = true;
+    /* private void PickUpRedCrystal()
+     {
+         crystalRed = true;
 
-        Debug.Log("CrystalRed" + crystalRed);
-    }
-    // set crystalBlue true when event broadcast recieved
-    private void PickUpBlueCrystal()
-    {
-        crystalBlue = true;
+         Debug.Log("CrystalRed" + crystalRed);
+     }
+     // set crystalBlue true when event broadcast recieved
+     private void PickUpBlueCrystal()
+     {
+         crystalBlue = true;
 
-        Debug.Log("crystalBlue" + crystalBlue);
-    }
+         Debug.Log("crystalBlue" + crystalBlue);
+     }*/
+
     // set keyRed true when event broadcast recieved
     private void PickUpRedKey()
-    {
-        keyRed = true;
+     {
+         keyRed = true;
+        audioSource.PlayOneShot(keyPick);
 
         Debug.Log("keyRed" + keyRed);
-    }
+     }
 
-    // set doorRed true when event broadcast recieved and destroy the door 
-    private void RedDoor()
-    {
-        if(keyRed == true)
-        {
-            doorRed = true;
-            Destroy(redDoor);
-        }
-        
-
-        Debug.Log("doorRed" + doorRed);
-    }
-
-    /*
-     private void groundPound()
+     // set doorRed true when event broadcast recieved and destroy the door 
+     private void RedDoor()
      {
-         if(groundSlamming == true)
+         if(keyRed == true)
          {
-             Destroy(groundBlock);
+             doorRed = true;
+            audioSource.PlayOneShot(doorSound);
+            Destroy(redDoor);
          }
-         groundBreakable = true;
 
-         Debug.Log("groundBreakable" + groundBreakable);
-     }*/
+
+         Debug.Log("doorRed" + doorRed);
+     }
+
+     /*
+      private void groundPound()
+      {
+          if(groundSlamming == true)
+          {
+              Destroy(groundBlock);
+          }
+          groundBreakable = true;
+
+          Debug.Log("groundBreakable" + groundBreakable);
+      }*/
     #endregion
 
 
@@ -172,6 +185,7 @@ public class JumpOne : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
         {
+            audioSource.PlayOneShot(jumpSound);
             //jump up based on velocity provided by formula 
             playerRB.velocity = Vector2.up * velo;
 
@@ -206,8 +220,8 @@ public class JumpOne : MonoBehaviour
 
     void OnDestroy()
     {   //unSubbing to same events on destroy 
-        GameEvents.current.onPickUpRedCrystal -= PickUpRedCrystal;
-        GameEvents.current.onPickUpBlueCrystal -= PickUpBlueCrystal;
+        //GameEvents.current.onPickUpRedCrystal -= PickUpRedCrystal;
+        //GameEvents.current.onPickUpBlueCrystal -= PickUpBlueCrystal;
         GameEvents.current.onPickUpRedKey -= PickUpRedKey;
         GameEvents.current.onRedDoor -= RedDoor;
     }
