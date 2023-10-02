@@ -6,11 +6,17 @@ TagManager:
   tags:
   - Crystal
   - Floor
+  - GroundLayer
+  - Block
+  - player
+  - Scarab
+  - Bird
+  - Bemo
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - GroundCheck
   - Water
   - UI
   - 

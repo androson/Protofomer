@@ -21,31 +21,31 @@ public class JumpOne : MonoBehaviour
 
     float timeMovement = 0f;
 
-    bool crystalRed;
-    bool crystalBlue;
+    //bool crystalRed;
+   //bool crystalBlue;
 
 
     // Start is called before the first frame update
     void Start()
     {
         //gravityScale = playerRB.gravityScale;
-        GameEvents.current.onPickUpRedCrystal += PickUpRedCrystal;
-        GameEvents.current.onPickUpBlueCrystal += PickUpBlueCrystal;
+        //GameEvents.current.onPickUpRedCrystal += PickUpRedCrystal;
+        //GameEvents.current.onPickUpBlueCrystal += PickUpBlueCrystal;
     }
 
-    private void PickUpRedCrystal()
+    /*private void PickUpRedCrystal()
     {
         crystalRed = true;
 
         Debug.Log("CrystalRed" + crystalRed);
     }
 
-    private void PickUpBlueCrystal()
+    //private void PickUpBlueCrystal()
     {
         crystalBlue = true;
 
         Debug.Log("crystalBlue" + crystalBlue);
-    }
+    }*/
 
     // Update is called once per frame
     void Update()
@@ -111,8 +111,7 @@ public class JumpOne : MonoBehaviour
         //so when he is descending gravity is doubled to make fall faster 
         if (playerRB.velocity.y < -0.1)
         {
-            grav = grav * 2; // not workin
-            //Debug.Log("i work"); works 
+            grav = grav * 2;
         }
 
         float velo = -grav * jumpDuration;
@@ -154,8 +153,9 @@ public class JumpOne : MonoBehaviour
 
     void OnDestroy()
     {   //unSubbing to same events on destroy 
-        GameEvents.current.onPickUpRedCrystal -= PickUpRedCrystal;
-        GameEvents.current.onPickUpBlueCrystal -= PickUpBlueCrystal;
+        //GameEvents.current.onPickUpRedCrystal -= PickUpRedCrystal;
+        //GameEvents.current.onPickUpBlueCrystal -= PickUpBlueCrystal;
     }
+
 } 
 
