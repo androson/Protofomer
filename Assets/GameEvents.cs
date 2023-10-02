@@ -9,10 +9,21 @@ public class GameEvents : MonoBehaviour
 
     private void Awake()
     {
+        //this script
         current = this;
     }
-    public event Action onPickUpRedCrystal;//Crystal
-    public event Action onPickUpBlueCrystal;//Crystal
+    // two events one for each crystal pickup 
+    public event Action onPickUpRedCrystal;
+    public event Action onPickUpBlueCrystal;
+
+    public event Action onPickUpRedKey;
+    public event Action onRedDoor;
+
+    //public event Action ongroundPound;
+
+    #region PickUpCrystals
+
+    // when trigger script gets triggered, sends a message here and this sends message to subscribers to start said function
     public void PickUpRedCrystal()
     {
         if(onPickUpRedCrystal != null)
@@ -22,6 +33,7 @@ public class GameEvents : MonoBehaviour
         }
     }
 
+    // when trigger script gets triggered, sends a message here and this sends message to subscribers to start said function
     public void PickUpBlueCrystal()
     {
         if (onPickUpBlueCrystal != null)
@@ -30,5 +42,35 @@ public class GameEvents : MonoBehaviour
             onPickUpBlueCrystal();
         }
     }
+    #endregion
 
+    /* public void groundPound()
+    {
+        if (ongroundPound != null)
+        {
+            Debug.Log("MEssage RedCrystal recieved");
+            ongroundPound();
+        }
+    }*/
+
+    #region Keys and doors
+    public void PickUpRedKey()
+    {
+        if (onPickUpRedKey != null)
+        {
+            Debug.Log("MEssage RedKey recieved");
+            onPickUpRedKey();
+        }
+    }
+
+    // when trigger script gets triggered, sends a message here and this sends message to subscribers to start said function
+    public void RedDoor()
+    {
+        if (onRedDoor != null)
+        {
+            Debug.Log("MEssage RedDoor recieved");
+            onRedDoor();
+        }
+    }
+    #endregion
 }

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Crystal
   - Floor
+  - Key
+  - Door
   - GroundLayer
   - Block
   - player
