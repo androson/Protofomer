@@ -7,11 +7,7 @@ public class JumpOne : MonoBehaviour
 {
 
     [SerializeField] private Rigidbody2D playerRB;
-    //[SerializeField] private float jumpSpeed;
-    //private float gravityScale;
-    //[SerializeField] private float gravityMultiplier;
-
-    //[SerializeField] private float runSpeed;
+ 
     [SerializeField] private AnimationCurve movementCurve;
     [SerializeField] private float currentMovementSpeed;
 
@@ -24,6 +20,17 @@ public class JumpOne : MonoBehaviour
     bool crystalRed;
     bool crystalBlue;
 
+    bool keyRed;
+    bool doorRed;
+    public GameObject redDoor;
+
+    //bool groundBreakable;
+    //bool groundSlamming;
+    //[SerializeField] private float jumpSpeed;
+    //private float gravityScale;
+    //[SerializeField] private float gravityMultiplier;
+
+    //[SerializeField] private float runSpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +38,11 @@ public class JumpOne : MonoBehaviour
         // subscribes to events from event script so they recieve the message
         GameEvents.current.onPickUpRedCrystal += PickUpRedCrystal;
         GameEvents.current.onPickUpBlueCrystal += PickUpBlueCrystal;
+        GameEvents.current.onPickUpRedKey += PickUpRedKey;
+        GameEvents.current.onRedDoor += RedDoor;
+        //GameEvents.current.ongroundPound += groundPound;
     }
+    #region Event Subscribtions 
 
     // set crystalRed true when event broadcast recieved
     private void PickUpRedCrystal()
@@ -47,8 +58,41 @@ public class JumpOne : MonoBehaviour
 
         Debug.Log("crystalBlue" + crystalBlue);
     }
+    // set keyRed true when event broadcast recieved
+    private void PickUpRedKey()
+    {
+        keyRed = true;
 
-    // Update is called once per frame
+        Debug.Log("keyRed" + keyRed);
+    }
+
+    // set doorRed true when event broadcast recieved and destroy the door 
+    private void RedDoor()
+    {
+        if(keyRed == true)
+        {
+            doorRed = true;
+            Destroy(redDoor);
+        }
+        
+
+        Debug.Log("doorRed" + doorRed);
+    }
+
+    /*
+     private void groundPound()
+     {
+         if(groundSlamming == true)
+         {
+             Destroy(groundBlock);
+         }
+         groundBreakable = true;
+
+         Debug.Log("groundBreakable" + groundBreakable);
+     }*/
+    #endregion
+
+
     void Update()
     {
         Movement();
@@ -100,7 +144,6 @@ public class JumpOne : MonoBehaviour
     #endregion
 
     #region Jump
-
     private void Jump()
     {
         // defining gravity by multiplying -2 into max jump hieght divided by jumpduration multiplied by jumpduration
@@ -108,14 +151,23 @@ public class JumpOne : MonoBehaviour
 
         //Debug.Log("playerRB velocity y" + playerRB.velocity.y); works
 
+        /// Tried making groundslam
+       /* if (Input.GetKeyDown(KeyCode.F) && isGrounded == false)
+        {
+            grav = grav * 6;
+            Debug.Log("groundSlamming" + groundSlamming);
+            
+            groundSlamming = true;
+        }
         // when player jumps Velocity.y is positive and when he is descending it goes negative 
         //so when he is descending gravity is doubled to make fall faster 
-        if (playerRB.velocity.y < -0.1)
+        else*/ if (playerRB.velocity.y < -0.1)
         {
-            grav = grav * 2; // not workin
-            //Debug.Log("i work"); works 
+            grav = grav * 2; // not workin 
+            
+           
         }
-
+        Debug.Log("grav" + grav);
         float velo = -grav * jumpDuration;
 
         Physics2D.gravity = new Vector2(0, grav);
@@ -158,6 +210,8 @@ public class JumpOne : MonoBehaviour
     {   //unSubbing to same events on destroy 
         GameEvents.current.onPickUpRedCrystal -= PickUpRedCrystal;
         GameEvents.current.onPickUpBlueCrystal -= PickUpBlueCrystal;
+        GameEvents.current.onPickUpRedKey -= PickUpRedKey;
+        GameEvents.current.onRedDoor -= RedDoor;
     }
 } 
 

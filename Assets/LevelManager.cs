@@ -21,6 +21,8 @@ public class LevelManager : MonoBehaviour
     {
         ScreenPause();
     }
+    
+    #region Pause
     public void ScreenPause()
     {
         // if bool true then allow pause functionality 
@@ -41,7 +43,6 @@ public class LevelManager : MonoBehaviour
         }
 
     }
-
     public void ResumeGame()
     {
         Time.timeScale = 1;
@@ -51,4 +52,7 @@ public class LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+    #endregion
+
+
 }

@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 1526354835}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -160,7 +160,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 0.990566, g: 0.0046724924, b: 0.0046724924, a: 1}
   m_FlipX: 0
@@ -206,10 +206,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerRB: {fileID: 6669443991978628884}
-  walkSpeed: 6
-  runSpeed: 0
-  jumpApex: 2
+  movementCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.09897995
+      value: 3.004547
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.99535227
+      value: 6.4858646
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  currentMovementSpeed: 0
+  jumpApex: 4
   jumpDuration: 0.5
+  redDoor: {fileID: 0}
 --- !u!70 &1526354835
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
