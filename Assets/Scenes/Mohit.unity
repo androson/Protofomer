@@ -128,6 +128,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
   m_PrefabInstance: {fileID: 5004307262268373300}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &49285766
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2098265627}
+    m_Modifications:
+    - target: {fileID: 5004307262293789961, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_Name
+      value: Lefft wall collidor (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789963, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_Size.y
+      value: 0.12822044
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789963, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.35597962
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+--- !u!4 &84361565 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+  m_PrefabInstance: {fileID: 1523961916}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &95057516
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -533,6 +603,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!4 &231433397 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+  m_PrefabInstance: {fileID: 49285766}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &232056930
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,7 +798,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
+  m_AllowDynamicResolution: 1
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -943,6 +1018,71 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.3412682}
   m_EdgeRadius: 0
+--- !u!1001 &325174800
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2098265627}
+    m_Modifications:
+    - target: {fileID: 5004307262293789961, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_Name
+      value: Lefft wall collidor (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789963, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_Size.y
+      value: 0.12822044
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789963, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.35597962
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
 --- !u!1 &332023903
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,7 +1114,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2098265627}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &332023906
 BoxCollider2D:
@@ -1025,6 +1165,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2fc1c67225d3fd4293fd6d217125c53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &407586475 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+  m_PrefabInstance: {fileID: 2042860268}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &453750892
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,6 +1428,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!4 &618304442 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+  m_PrefabInstance: {fileID: 1533144740}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &643676320
 GameObject:
   m_ObjectHideFlags: 0
@@ -1597,7 +1747,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.32142222, y: -0.2716991}
+  m_Offset: {x: 0.32142222, y: 0.29863197}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1608,7 +1758,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1721256, y: 0.6060361}
+  m_Size: {x: 1.1721256, y: 1.7466983}
   m_EdgeRadius: 0
 --- !u!224 &870441522 stripped
 RectTransform:
@@ -1728,6 +1878,76 @@ RectTransform:
   m_AnchoredPosition: {x: 49.93399, y: -36.512695}
   m_SizeDelta: {x: 2094.2717, y: 1238.3972}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &1231672111
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2098265627}
+    m_Modifications:
+    - target: {fileID: 5004307262293789961, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_Name
+      value: Lefft wall collidor (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.829
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789963, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_Size.y
+      value: 0.12822044
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789963, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.35597962
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+--- !u!4 &1333200359 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+  m_PrefabInstance: {fileID: 1732354160}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1369216065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1975,6 +2195,136 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1001 &1523961916
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2098265627}
+    m_Modifications:
+    - target: {fileID: 5004307262293789961, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_Name
+      value: Lefft wall collidor (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.181
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.504
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789963, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_Size.y
+      value: 0.12822044
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789963, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.35597962
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+--- !u!1001 &1533144740
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2098265627}
+    m_Modifications:
+    - target: {fileID: 5004307262293789961, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_Name
+      value: Lefft wall collidor (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.816
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.562
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789963, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_Size.y
+      value: 0.12822044
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789963, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.35597962
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
 --- !u!1 &1588864247
 GameObject:
   m_ObjectHideFlags: 0
@@ -2361,6 +2711,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4839094805335003237, guid: 9825b622048d9c049a768f5f457d15ab, type: 3}
   m_PrefabInstance: {fileID: 4839094805900330740}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1732354160
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2098265627}
+    m_Modifications:
+    - target: {fileID: 5004307262293789961, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_Name
+      value: Lefft wall collidor (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789963, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_Size.y
+      value: 0.12822044
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789963, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.35597962
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
 --- !u!1 &1888664008
 GameObject:
   m_ObjectHideFlags: 0
@@ -2496,6 +2911,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888664008}
   m_CullTransparentMesh: 1
+--- !u!4 &1892005636 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+  m_PrefabInstance: {fileID: 325174800}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1919105012 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+  m_PrefabInstance: {fileID: 1231672111}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1965622286
 GameObject:
   m_ObjectHideFlags: 0
@@ -3972,6 +4397,71 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &2042860268
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2098265627}
+    m_Modifications:
+    - target: {fileID: 5004307262293789961, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_Name
+      value: Lefft wall collidor (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.187
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.504
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789963, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_Size.y
+      value: 0.12822044
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789963, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.35597962
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
 --- !u!1 &2098265625
 GameObject:
   m_ObjectHideFlags: 0
@@ -4022,7 +4512,14 @@ Transform:
   - {fileID: 25441342}
   - {fileID: 861490534}
   - {fileID: 2124151214}
+  - {fileID: 618304442}
   - {fileID: 332023904}
+  - {fileID: 231433397}
+  - {fileID: 1333200359}
+  - {fileID: 1892005636}
+  - {fileID: 1919105012}
+  - {fileID: 407586475}
+  - {fileID: 84361565}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5072,7 +5569,7 @@ PlatformEffector2D:
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
-  m_SurfaceArc: 180
+  m_SurfaceArc: 135.16
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
@@ -5305,6 +5802,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: key
       objectReference: {fileID: 0}
+    - target: {fileID: 4839094805335003236, guid: 9825b622048d9c049a768f5f457d15ab, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4839094805335003237, guid: 9825b622048d9c049a768f5f457d15ab, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -5348,6 +5849,10 @@ PrefabInstance:
     - target: {fileID: 4839094805335003237, guid: 9825b622048d9c049a768f5f457d15ab, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839094805335003238, guid: 9825b622048d9c049a768f5f457d15ab, type: 3}
+      propertyPath: m_SortingOrder
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9825b622048d9c049a768f5f457d15ab, type: 3}
@@ -5405,6 +5910,14 @@ PrefabInstance:
     - target: {fileID: 5004307262293789962, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789963, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_Size.y
+      value: 1.4816481
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004307262293789963, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.16610688
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc5d65a6ed1f5a84aa3fd9dab4fcc593, type: 3}
@@ -5564,6 +6077,14 @@ PrefabInstance:
       propertyPath: redDoor
       value: 
       objectReference: {fileID: 2144344741}
+    - target: {fileID: 6669443991978628886, guid: 9e8f23ea3adbb894597f397bb83235e6, type: 3}
+      propertyPath: jumpApex
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6669443991978628886, guid: 9e8f23ea3adbb894597f397bb83235e6, type: 3}
+      propertyPath: jumpDuration
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 6669443991978628889, guid: 9e8f23ea3adbb894597f397bb83235e6, type: 3}
       propertyPath: m_Name
       value: Capsule
